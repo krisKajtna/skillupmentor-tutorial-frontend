@@ -1,8 +1,8 @@
-import DashboardLayout from 'components/ui/dashboardlayout'
+import Layout from 'components/ui/Layout'
 import { FC } from 'react'
 
 const Register: FC = () => {
-  return <DashboardLayout>Register</DashboardLayout>
+  return <Layout>Register</Layout>
 }
 
 export default Register

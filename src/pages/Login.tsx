@@ -1,8 +1,8 @@
-import DashboardLayout from 'components/ui/dashboardlayout'
+import Layout from 'components/ui/Layout'
 import { FC } from 'react'
 
 const Login: FC = () => {
-  return <DashboardLayout>Login</DashboardLayout>
+  return <Layout>Login</Layout>
 }
 
 export default Login
