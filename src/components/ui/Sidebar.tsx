@@ -58,7 +58,7 @@ const Sidebar: FC = () => {
   return (
     <div>
       <Button
-        className="sidebar_btn-menu btn-dark text-light rounded-0 d-flex justify-content-center align-items-center p-4"
+        className="sidebar__btn-menu btn-dark text-light rounded-0 d-flex justify-content-center align-items-center p-4"
         type="button"
         onClick={handleOpen}
       >
