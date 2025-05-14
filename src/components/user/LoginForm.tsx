@@ -37,7 +37,7 @@ const LoginForm: FC = () => {
           control={control}
           name="email"
           render={({ field }) => (
-            <FormGroup>
+            <FormGroup className="mb-3">
               <FormLabel htmlFor="email">Email</FormLabel>
               <input
                 {...field}
@@ -61,7 +61,7 @@ const LoginForm: FC = () => {
           control={control}
           name="password"
           render={({ field }) => (
-            <FormGroup>
+            <FormGroup className="mb-3">
               <FormLabel htmlFor="password">Password</FormLabel>
               <input
                 {...field}
@@ -82,7 +82,7 @@ const LoginForm: FC = () => {
           )}
         />
         <div className="d-flex justify-content-between align-items-center mb-2">
-          <p className="mb-0">Don{"'"}t have an account yet?</p>
+          <p className="mb-0">Dont have an account yet?</p>
           <Link className="text-decorator-none text-end" to={routes.SIGNUP}>
             Create account
           </Link>

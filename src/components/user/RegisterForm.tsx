@@ -131,7 +131,7 @@ const RegisterForm: FC = () => {
           control={control}
           name="first_name"
           render={({ field }) => (
-            <FormGroup>
+            <FormGroup className="mb-3">
               <FormLabel htmlFor="first_name">First name</FormLabel>
               <input
                 {...field}
@@ -154,7 +154,7 @@ const RegisterForm: FC = () => {
           control={control}
           name="last_name"
           render={({ field }) => (
-            <FormGroup>
+            <FormGroup className="mb-3">
               <FormLabel htmlFor="last_name">Last name</FormLabel>
               <input
                 {...field}
@@ -177,7 +177,7 @@ const RegisterForm: FC = () => {
           control={control}
           name="email"
           render={({ field }) => (
-            <FormGroup>
+            <FormGroup className="mb-3">
               <FormLabel htmlFor="email">Email</FormLabel>
               <input
                 {...field}
@@ -201,7 +201,7 @@ const RegisterForm: FC = () => {
           control={control}
           name="password"
           render={({ field }) => (
-            <FormGroup>
+            <FormGroup className="mb-3">
               <FormLabel htmlFor="password">Password</FormLabel>
               <input
                 {...field}
@@ -225,7 +225,7 @@ const RegisterForm: FC = () => {
           control={control}
           name="confirm_password"
           render={({ field }) => (
-            <FormGroup>
+            <FormGroup className="mb-3">
               <FormLabel htmlFor="confirm_password">Confirm password</FormLabel>
               <input
                 {...field}
