@@ -17,6 +17,6 @@
     "jsx": "react-jsx",
     "baseUrl": "src"
   },
-  "include": ["src"],
+  "include": ["src", "src/hooks/react-hook-form/.tsx"],
   "exclude": ["node_modules"]
 }
