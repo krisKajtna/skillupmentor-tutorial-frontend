@@ -167,12 +167,6 @@ const CreateUpdateRoleForm: FC<Props> = ({ defaultValues }) => {
             </div>
           )}
         </div>
-        <div className="d-flex justify-content-between align-items-center mb-2">
-          <p className="mb-0">Dont have an account yet?</p>
-          <Link className="text-decorator-none text-end" to={routes.SIGNUP}>
-            Create account
-          </Link>
-        </div>
         <Button className="w-100 mt-4" type="submit">
           {defaultValues ? 'Update role' : 'Create new role'}
         </Button>
