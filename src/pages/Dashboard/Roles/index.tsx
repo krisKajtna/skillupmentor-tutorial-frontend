@@ -86,6 +86,9 @@ const DashboardRoles: FC = () => {
                               : 'btn btn-warning btn-sm me-2'
                           }
                           to={`${routes.DASHBOARD_PREFIX}/roles/edit`}
+                          state={{
+                            ...item,
+                          }}
                         >
                           Edit
                         </Link>
