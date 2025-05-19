@@ -40,4 +40,4 @@ export const useCreateUpdateRoleForm = ({ defaultValues }: Props) => {
   }
 }
 
-export type LoginForm = ReturnType<typeof useCreateUpdateRoleForm>
+export type CreateUpdateRoleForm = ReturnType<typeof useCreateUpdateRoleForm>
