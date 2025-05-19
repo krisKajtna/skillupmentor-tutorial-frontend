@@ -30,17 +30,6 @@ export const useCreateUpdateUserForm = ({ defaultValues }: Props) => {
     first_name: Yup.string().required(),
     last_name: Yup.string().required(),
     email: Yup.string().email().required('Please enter a valid email'),
-    password: Yup.string(),
-    confirm_password: Yup.string()
-      .oneOf([Yup.ref('password'), null], 'Passwords do not match')
-      .notRequired(),
-    role_id: Yup.string().notRequired(),
-  })
-
-  const UpdateUserSchema = Yup.object().shape({
-    first_name: Yup.string().required(),
-    last_name: Yup.string().required(),
-    email: Yup.string().email().required('Please enter a valid email'),
     password: Yup.string()
       .matches(
         /^(?=.*\d)[A-Za-z. \s_-]+[\w~@#$%^&"+=`|{}:;!.?"()[\]-]{6,}/,
@@ -51,6 +40,17 @@ export const useCreateUpdateUserForm = ({ defaultValues }: Props) => {
       .oneOf([Yup.ref('password'), null], 'Passwords do not match')
       .required('Passwords do not match'),
     role_id: Yup.string().required('Role field is required'),
+  })
+
+  const UpdateUserSchema = Yup.object().shape({
+    first_name: Yup.string().required(),
+    last_name: Yup.string().required(),
+    email: Yup.string().email().required('Please enter a valid email'),
+    password: Yup.string().notRequired(),
+    confirm_password: Yup.string()
+      .oneOf([Yup.ref('password'), null], 'Passwords do not match')
+      .notRequired(),
+    role_id: Yup.string().notRequired(),
   })
 
   const {

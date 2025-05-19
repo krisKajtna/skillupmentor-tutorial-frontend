@@ -17,7 +17,6 @@ import {
 } from 'hooks/react-hook-form/useCreateUpdateUserForm'
 import { UserType } from 'models/auth'
 import { useQuery } from 'react-query'
-import { error } from 'console'
 import { RoleType } from 'models/role'
 
 interface Props {
@@ -259,7 +258,7 @@ const CreateUpdateUserForm: FC<Props> = ({ defaultValues }) => {
                 aria-describedby="role_id"
               >
                 <option></option>
-                {rolesData.map((role: RoleType, index: number) => (
+                {rolesData?.data.map((role: RoleType, index: number) => (
                   <option key={index} value={role.id}>
                     {role.name}
                   </option>
