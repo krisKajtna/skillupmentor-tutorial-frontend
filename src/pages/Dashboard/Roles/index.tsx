@@ -39,7 +39,7 @@ const DashboardRoles: FC = () => {
       }
     },
     onError: () => {
-      setApiError('somethin went wrong while deleting a product')
+      setApiError('somethin went wrong while deleting a role')
       setShowError(true)
     },
   })
