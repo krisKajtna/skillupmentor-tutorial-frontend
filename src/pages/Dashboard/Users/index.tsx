@@ -83,7 +83,7 @@ const DashboardUsers: FC = () => {
                       <td>{item.email}</td>
                       <td>
                         {item.first_name || item.last_name
-                          ? `${item.first_name} ${item.last_name}`
+                          ? `${item.first_name ?? ''} ${item.last_name ?? ''}`
                           : '/'}
                       </td>
                       <td>{item.role?.name ?? '/'}</td>

@@ -32,7 +32,7 @@ export const useCreateUpdateUserForm = ({ defaultValues }: Props) => {
     email: Yup.string().email().required('Please enter a valid email'),
     password: Yup.string()
       .matches(
-        /^(?=.*\d)[A-Za-z. \s_-]+[\w~@#$%^&"+=`|{}:;!.?"()[\]-]{6,}/,
+        /^(?=.*\d)(?=.*[A-Za-z]).{6,}$/,
         'Password must have at least one number, lower or upper case letter and it has to be longer than 5 charecters',
       )
       .required(),
